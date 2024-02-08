@@ -26,3 +26,6 @@ This smart contract is released under the MIT License. See the [LICENSE](LICENSE
 
 ## Author
 
+Tejaswi
+
+shivagopala70@gmail.com
