@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract RiverFlow {
+    uint256 constant riverSpeed = 10; // Speed of the river in Km/hr
+
+    function Destination_A(uint256 swimmerSpeed, uint256 timeTaken) external pure {
+        // Check if swimmer speed is greater than river speed
+        require(swimmerSpeed > riverSpeed, "Swimmer will not reach Point B");
+
+        // Check if time taken is less than 20 hours
+        assert(timeTaken < 20);
+    }
+
+    function BoostSpeed(uint256 boostAmount) external pure {
+        // Use if statement with revert if boost is more than 5 km/hr
+        if (boostAmount > 5) {
+            revert("Swimmer can make a round trip");
+        }
+    }
+}
